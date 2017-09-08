@@ -5,6 +5,7 @@ const router = Router();
 
 // router.use('/home', functionName);
 router.use(require('./chickens.js'));
+router.use(require('./eggs.js'));
 
 router.get('/', (req, res) => {
 	res.json({
